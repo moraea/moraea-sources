@@ -42,7 +42,11 @@ echo "$input" | grep beta > /dev/null && betaString=' beta'
 output="$version$betaString ($build)"
 mkdir "$output"
 
-cp Build/Ramdisk/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight "$output"cp Build/Ramdisk/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore "$output"cp Build/Ramdisk/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface "$output"cp Build/Ramdisk/System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator "$output"cp Build/Ramdisk/System/Library/Frameworks/CoreDisplay.framework/Versions/A/CoreDisplay "$output"
+cp Build/Ramdisk/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight "$output"
+cp Build/Ramdisk/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore "$output"
+cp Build/Ramdisk/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface "$output"
+cp Build/Ramdisk/System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator "$output"
+cp Build/Ramdisk/System/Library/Frameworks/CoreDisplay.framework/Versions/A/CoreDisplay "$output"
 
 cp Build/Ramdisk/usr/lib/system/libsystem_kernel.dylib "$output"
 cp -R Build/Payload/System/Library/Extensions/IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext "$output"
