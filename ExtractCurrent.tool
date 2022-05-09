@@ -51,5 +51,9 @@ cp Build/Ramdisk/System/Library/Frameworks/CoreDisplay.framework/Versions/A/Core
 cp Build/Ramdisk/usr/lib/system/libsystem_kernel.dylib "$output"
 cp -R Build/Payload/System/Library/Extensions/IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext "$output"
 cp Build/Zip/AssetData/boot/Firmware/usr/standalone/i386/boot.efi "$output"
+cp -R Build/Payload/System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext "$output"
+cp Build/Payload/usr/sbin/bluetoothd "$output"
+cp Build/Payload/usr/sbin/BlueTool "$output"
+cp -R Build/Payload/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc "$output"
 
 sudo rm -rf Build
