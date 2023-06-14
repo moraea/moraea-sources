@@ -1,12 +1,3 @@
 .DS_Store
 /Build
-
-AppleHDA.kext
-AirPortBrcmNIC.kext
-com.apple.WebKit.WebContent.xpc
-boot.efi
-libsystem_kernel.dylib
-X86PlatformPlugin.kext
-bluetoothd
-BlueTool
-nvenet.kext
+*.json
